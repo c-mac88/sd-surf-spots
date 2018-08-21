@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs'); %>
+  <body style="padding-top: 70px; padding-bottom: 50px;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GFP4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <%- include('../partials/navigation.ejs'); %>
+  <%- include('../partials/banner.ejs'); %>
+  <h2>USER DATA</h2>
+  <%- JSON.stringify(user) %>
+  <h2>Third Party Profile(s)</h2>
+  <% if(user.profiles && user.profiles.length !==0) { %>
+    <% user.profiles.forEach(function(val){ %>
+      <%- JSON.stringify(val) %>
+    <% }); %>
+  <% } %>
+  <h3>Link Account</h3>
+  <ul class="list-inline list-unstyled">
+    <li><a href="/link/github" class="btn btn-primary">Link GitHub</a></li>
+    <li><a href="/link/google" class="btn btn-primary">Link Google</a></li>
+  </ul>
+  <h2>Linked Account(s)</h2>
+  <% if(user.accounts && user.accounts.length !==0) { %>
+    <% user.accounts.forEach(function(val){ %>
+      <%- JSON.stringify(val) %>
+    <% }); %>
+  <% } %>
+  <%- include('../partials/footer.ejs'); %>
+</body>
+</html>

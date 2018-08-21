@@ -1,0 +1,119 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fullName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "moodleUserId": {
+      "type": "number"
+    },
+    "wakatimeApiKey": {
+      "type": "string"
+    },
+    "trackId": {
+      "type": "string"
+    },
+    "studentType": {
+      "type": "string"
+    },
+    "scheduleId": {
+      "type": "string"
+    },
+    "mockData": {
+      "type": "boolean",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "inClass": {
+      "type": "boolean",
+      "default": false
+    },
+    "enrolled": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "accountabilityPartnerEmailId": {
+      "type": "string"
+    },
+    "accountabilityPartnerEmailAddress": {
+      "type": "string"
+    },
+    "accountabilityPartnerComment": {
+      "type": "string"
+    },
+    "accountabilityPartnerFirstName": {
+      "type": "string"
+    },
+    "accountabilityPartnerLastName": {
+      "type": "string"
+    },
+    "dateUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "accessToken",
+      "foreignKey": "userId"
+    },
+    "identities": {
+      "type": "hasMany",
+      "model": "userIdentity",
+      "foreignKey": "userId"
+    },
+    "credentials": {
+      "type": "hasMany",
+      "model": "userCredential",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW",
+      "property": "*"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "findOne"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "swipe"
+    }
+  ],
+  "methods": {}
+}

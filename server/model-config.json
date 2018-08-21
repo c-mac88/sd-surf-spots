@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "./models",
+      "./node_modules/loopback-component-passport/lib/models"
+    ]
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource"
+  },
+  "user": {
+    "dataSource": "lessonDS",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
+  "accessToken": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "userCredential": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "userIdentity": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "lessonDS",
+    "public": true
+  },
+  "Proxy": {
+    "dataSource": null,
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "getRandomGifByTagFW": true
+        }
+      }
+    }
+  }
+}

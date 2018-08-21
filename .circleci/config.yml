@@ -1,0 +1,56 @@
+version: 2
+jobs:
+  build-job:
+    working_directory: ~/yoda
+    docker:
+      - image: circleci/node:8.7.0
+      - image: mongo:3.4.4
+    steps:
+      - checkout
+      - run:
+          name: Install npm Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Mocha Test Suite
+          command: './node_modules/.bin/nyc npm run circle-test'
+      - run:
+          name: Mocha Code Coverage
+          command: './node_modules/.bin/nyc report --reporter=lcov'
+      - run:
+          name: Jest Test Suite
+          command: npm run test-client
+      - store_artifacts:
+          path: coverage
+      - store_test_results:
+          path: coverage/test-results.xml
+  deploy-job:
+    working_directory: ~/yoda
+    docker:
+      - image: circleci/node:8.1.4
+      - image: mongo:3.4.4
+    steps:
+      - checkout
+      - run:
+          name: Run Heroku setup
+          command: bash .circleci/setup-heroku.sh
+      - add_ssh_keys:
+          fingerprints:
+            - "4b:f4:bf:fa:cf:8c:6b:c7:19:34:e2:2c:d8:df:82:b6"
+      - deploy:
+          name: Deploy Master to Heroku
+          command: git push --force git@heroku.com:$HEROKU_APP_NAME.git HEAD:refs/heads/master
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master

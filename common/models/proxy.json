@@ -1,0 +1,14 @@
+{
+  "name": "Proxy",
+  "plural": "Proxies",
+  "base": "",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

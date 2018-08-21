@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs'); %>
+  <body style="padding-top: 70px;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GFP4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <%- include('../partials/navigation.ejs'); %>
+  <%- include('../partials/banner.ejs'); %>
+  <main class="login">
+    <h2>Login to your account below</h2>
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-6 video">
+          <video poster="" playsinline autoplay muted loop>
+            <source src="https://www.origincodeacademy.com/wp-content/uploads/2017/09/typing-of-codes-2833-1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <% if ( !!locals.messages.error ) { %>
+          <h4>Message: <%= locals.messages.error[0] %> </h4>
+        <% } %>
+        <div class="col-md-6 actions">
+            <div class="action-links flex-center column">
+              <a href="/local" class="btn btn-block">Login</a>
+              <div class="other">
+                <p class="sub">or sign in with a social network</p>
+                <a href="/auth/github" class="btn btn-block github"><svg width="26" height="26"><path fill="#FFFFFE" fillRule="evenodd" d="M4 13.5c0 4.7 3 8.7 7.4 10.2.5 0 .7-.3.7-.5v-1.9C9 22 8.5 20 8.5 20c-.5-1.3-1.2-1.6-1.2-1.6-1-.7 0-.6 0-.6 1.1 0 1.7 1 1.7 1 1 1.7 2.5 1.2 3.1 1 .1-.7.4-1.2.7-1.5C10.4 18 7.9 17 7.9 13c0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.4.1-2.8 0 0 1-.3 3 1a10.3 10.3 0 0 1 5.4 0c2-1.3 3-1 3-1 .5 1.4.1 2.5 0 2.8.7.8 1.1 1.7 1.1 2.9 0 4.1-2.5 5-4.9 5.3.4.3.7 1 .7 2v3c0 .2.2.6.8.5A10.8 10.8 0 1 0 4 13.5z"/></svg>Sign in with GitHub</a>
+                <a href="/auth/google" class="btn btn-block google"><svg width="26" height="26">
+                    <g fill="none" fillRule="evenodd" transform="translate(-36 -9)">
+                      <path fill="#4285F4" d="M57.6 20.2l-.1-1.8H49v3.4h4.8a3.9 3.9 0 0 1-1.8 2.8v2.2h3a8.8 8.8 0 0 0 2.6-6.6z"/>
+                      <path fill="#34A853" d="M49 29c2.4 0 4.5-.8 6-2.2l-3-2.2a5.4 5.4 0 0 1-8-2.9h-3V24a9 9 0 0 0 8 5z"/>
+                      <path fill="#FBBC05" d="M44 21.7a5.4 5.4 0 0 1 0-3.4V16h-3a9 9 0 0 0 0 8l3-2.3z"/>
+                      <path fill="#EA4335" d="M49 14.6c1.3 0 2.5.4 3.4 1.3l2.6-2.6A9 9 0 0 0 41 16l3 2.4a5.4 5.4 0 0 1 5-3.7z"/>
+                      <path d="M40 11h18v18H40z"/>
+                    </g>
+                  </svg>Sign in with Google
+                </a>
+                <p class="sub">Don’t have an account? <a href="/signup">Sign Up</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- <ul class="list-inline list-unstyled">
+      <li><a href="/local" class="btn btn-primary">Login with local account</a></li>
+      <li><a href="/auth/github" class="btn btn-primary">Login with GitHub</a></li>
+      <li><a href="/auth/google" class="btn btn-primary">Login with Google</a></li>
+    </ul> -->
+    <%- include('../partials/footer.ejs'); %>
+  </body>
+</html>

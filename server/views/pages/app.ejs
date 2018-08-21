@@ -1,0 +1,31 @@
+<html>
+  <%- include('../partials/head.ejs'); %>
+  <body style="padding-top: 70px; padding-bottom: 50px;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GFP4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script src="../monaco-editor/dev/vs/loader.js"></script>
+    <script>
+      window.kyber = new Promise((resolve, reject) => {
+        require.config({ paths: { 'vs': '../monaco-editor/min/vs' }});
+        document.addEventListener("DOMContentLoaded", function(event) {
+          require(['vs/editor/editor.main'], function () {
+            resolve(window.monaco);
+            setTimeout(() => {
+              if (!window.monaco) {
+                reject(new Error('MONACO_NOT_LOADED'))
+              }
+            }, 5000)
+          });
+        });
+      });
+    </script>
+    <script type='text/javascript'>
+      var userFromServer = <%-JSON.stringify(user)%>
+    </script>
+    <script src="../bundle.js"></script>
+    <%- include('../partials/footer.ejs'); %>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../partials/head.ejs'); %>
+  <body style="padding-top: 70px;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GFP4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <%- include('../../partials/prepCourseNavigation.ejs'); %>
+  <%- include('../../partials/banner.ejs'); %>
+  <main class="login">
+      <h2>Sign up for an account below</h2>
+      <div class="content container">
+        <div class="row">
+          <div class="col-md-6 video">
+            <video poster="" playsinline autoplay muted loop>
+              <source src="https://www.origincodeacademy.com/wp-content/uploads/2017/09/typing-of-codes-2833-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <% if ( !!locals.messages.error ) { %>
+            <h4>Message: <%= locals.messages.error[0] %> </h4>
+          <% } %>
+          <div class="col-md-6 actions">
+            <div class="flex-center column">
+              <form role="form" action="/prepCourseSignup" method="post">
+                <div class="form-group">
+                  <label for="firstName">First name</label>
+                  <input type="text" name="firstName" placeholder="Enter your first name" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last name</label>
+                  <input type="text" name="lastName" placeholder="Enter your last name" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" name="email" placeholder="Enter your email address" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone number</label>
+                  <input type="tel" name="phoneNumber" placeholder="Enter your phone number" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" placeholder="Password" class="form-control"/>
+                </div>
+                <button type="submit" class="btn btn-block">Sign up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <%- include('../../partials/footer.ejs'); %>
+  </body>
+</html>

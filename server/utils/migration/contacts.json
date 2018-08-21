@@ -1,0 +1,295 @@
+[  {
+    "email": "erikallison23@gmail.com",
+    "apiKey": "a1090d61-4228-4606-9bf0-bddcc916c7de",
+    "studentType": "FULL",
+    "firstName": "Erik",
+    "lastName": "Allison",
+    "moodleUserId": 114
+  },
+  {
+    "email": "freowhenry@yahoo.com",
+    "apiKey": "f5ddaf9f-36d1-4d0a-8a59-631f4b9428ef",
+    "studentType": "FULL",
+    "firstName": "Henry",
+    "lastName": "Freow",
+    "moodleUserId": 137
+  },
+  {
+    "email": "matthewstehen@gmail.com",
+    "apiKey": "931d3231-fe72-4fc9-bec3-bcc3d713d5b2",
+    "studentType": "FULL",
+    "firstName": "Matthew",
+    "lastName": "Griffith",
+    "moodleUserId": 86
+  },
+  {
+    "email": "danielmkurtz@gmail.com",
+    "apiKey": "0c3776f7-8a87-486f-b604-f56656d80ece",
+    "studentType": "FULL",
+    "firstName": "Daniel",
+    "lastName": "Kurtz",
+    "moodleUserId": 49
+  },
+  {
+    "email": "yahshemi@gmail.com",
+    "apiKey": "2437aa18-9312-494b-a20b-5bbf5fa8aae7",
+    "studentType": "FULL",
+    "firstName": "Yahshemi",
+    "lastName": "Walters",
+    "moodleUserId": 135
+  },
+  {
+    "email": "alfonsowongsd@gmail.com",
+    "apiKey": "80a6306a-e4ef-4942-beb8-575d88165ee1",
+    "studentType": "FULL",
+    "firstName": "Alfonso",
+    "lastName": "Wong",
+    "moodleUserId": 99
+  },
+  {
+    "email": "dxangobiz@gmail.com",
+    "apiKey": "2295ac5c-18f3-4205-b9e7-68a599c0feee",
+    "studentType": "FULL",
+    "firstName": "Devin",
+    "lastName": "Ledesma",
+    "moodleUserId": 100
+  },
+  {
+    "email": "yuri.kromsky@gmail.com",
+    "apiKey": "84d892e6-668c-4315-b8c1-0851de727b43",
+    "studentType": "FULL",
+    "firstName": "Yuri",
+    "lastName": "Kromsky",
+    "moodleUserId": 120
+  },
+  {
+    "email": "c_bremmer@outlook.com",
+    "apiKey": "adff71b3-c3cb-4fb3-a8cb-953eec57b5c6",
+    "studentType": "FULL",
+    "firstName": "Chris",
+    "lastName": "Bremmer",
+    "moodleUserId": 53
+  },
+  {
+    "email": "reif.tommy@gmail.com",
+    "apiKey": "dbd856dc-2f96-4c14-aea4-88336c5a0036",
+    "studentType": "FULL",
+    "firstName": "Thomas",
+    "lastName": "Reif",
+    "moodleUserId": 124
+  },
+  {
+    "email": "mrkingtero@yahoo.com",
+    "apiKey": "4a117b80-d784-4239-b6dc-1ea0f6f11fd0",
+    "studentType": "FULL",
+    "firstName": "Alonzo",
+    "lastName": "Quintero",
+    "moodleUserId": 121
+  },
+  {
+    "email": "arroyo.franciscojr@gmail.com",
+    "apiKey": "f8368a30-3bc3-4a13-9dd7-4539a8557fa0",
+    "studentType": "FULL",
+    "firstName": "Francisco",
+    "lastName": "Arroyo",
+    "moodleUserId": 89
+  },
+  {
+    "email": "citryn85@gmail.com",
+    "apiKey": "38de086c-9285-4405-8196-963fbc987e50",
+    "studentType": "FULL",
+    "firstName": "Olga",
+    "lastName": "Volodko",
+    "moodleUserId": 56
+  },
+  {
+    "email": "jcalhoon21@gmail.com",
+    "apiKey": "061e487e-3293-40f5-a022-baea33f84f7e",
+    "studentType": "FULL",
+    "firstName": "Jennifer",
+    "lastName": "Calhoon",
+    "moodleUserId": 24
+  },
+  {
+    "email": "ellatolentino05@gmail.com",
+    "apiKey": "ae78f7ff-df25-4219-847d-c8c5fcd6eaf1",
+    "studentType": "UNKNOWN",
+    "firstName": "Ella",
+    "lastName": "Tolentino",
+    "moodleUserId": 132
+  },
+  {
+    "email": "b.nutty@gmail.com",
+    "apiKey": "917639b9-c9c8-42b2-90fa-ce7ad2da641a",
+    "studentType": "FULL",
+    "firstName": "Brandon",
+    "lastName": "Benoit",
+    "moodleUserId": 62
+  },
+  {
+    "email": "shanemcnair@gmail.com",
+    "apiKey": "0d0881b4-af3e-4b3f-ae24-29024c76bee7",
+    "studentType": "FULL",
+    "firstName": "Shane",
+    "lastName": "McNair",
+    "moodleUserId": 127
+  },
+  {
+    "email": "belfortk@gmail.com",
+    "apiKey": "3f5cd251-82cc-4a85-9554-ccd5fadcb1cc",
+    "studentType": "FULL",
+    "firstName": "Kyle",
+    "lastName": "Belfort",
+    "moodleUserId": 78
+  },
+  {
+    "email": "byronluk@gmail.com",
+    "apiKey": "8fa1d17b-6a7b-4205-ae4a-7a3a4d5e2678",
+    "studentType": "FULL",
+    "firstName": "Byron",
+    "lastName": "Luk",
+    "moodleUserId": 134
+  },
+  {
+    "email": "custodioly@gmail.com",
+    "apiKey": "15aec229-a9c3-4263-8de5-60e8f16ecc0c",
+    "studentType": "FULL",
+    "firstName": "Larry",
+    "lastName": "Custodio",
+    "moodleUserId": 103
+  },
+  {
+    "email": "demetrious.harmon@gmail.com",
+    "apiKey": "bd140a3e-aebe-479c-a62e-b11e714527d9",
+    "studentType": "PART",
+    "firstName": "Demetrious",
+    "lastName": "Harmon",
+    "moodleUserId": 45
+  },
+  {
+    "email": "alexander.aldredge@gmail.com",
+    "apiKey": "dfa299e6-71a6-4e70-9954-a3a54f68b47f",
+    "studentType": "FULL",
+    "firstName": "Alexander",
+    "lastName": "Aldredge",
+    "moodleUserId": 126
+  },
+  {
+    "email": "clay@the861groupe.com",
+    "apiKey": "79fe724d-ac0f-41bc-9059-493e57398fc6",
+    "studentType": "FULL",
+    "firstName": "Clay",
+    "lastName": "Knight",
+    "moodleUserId": 80
+  },
+  {
+    "email": "brendanprinz@gmail.com",
+    "apiKey": "8fc09876-f064-45bf-8f7f-e18026c3a0fa",
+    "studentType": "FULL",
+    "firstName": "Brendan",
+    "lastName": "Prince",
+    "moodleUserId": 92
+  },
+  {
+    "email": "crsstevens1@gmail.com",
+    "apiKey": "e01d94e9-c99d-4c98-bb82-3e3451b30267",
+    "studentType": "PART",
+    "firstName": "Christopher",
+    "lastName": "Stevens",
+    "moodleUserId": 29
+  },
+  {
+    "email": "stevendelro@gmail.com",
+    "apiKey": "66ddda3e-8fdb-475c-b1ee-99959b9ae8e1",
+    "studentType": "FULL",
+    "firstName": "Steven",
+    "lastName": "Rosario",
+    "moodleUserId": 48
+  },
+  {
+    "email": "kaiyawalker@mail.com",
+    "apiKey": "cbf12000-8697-4223-a11f-6e6eb436f1a7",
+    "studentType": "FULL",
+    "firstName": "Kaiya",
+    "lastName": "Walker",
+    "moodleUserId": 128
+  },
+  {
+    "email": "marvizu.sd@live.com",
+    "apiKey": "2a43774d-027a-44d0-b7d5-9b5c3aaebe14",
+    "studentType": "FULL",
+    "firstName": "Miguel",
+    "lastName": "Arvizu",
+    "moodleUserId": 51
+  },
+  {
+    "email": "vigne6@gmail.com",
+    "apiKey": "ee379eee-7b5f-440d-a317-bf794ca8f9da",
+    "studentType": "PART",
+    "firstName": "Eric",
+    "lastName": "Taylor",
+    "moodleUserId": 117
+  },
+  {
+    "email": "caelum.modus@gmail.com",
+    "apiKey": "8afecd2c-ed5d-46de-b1d5-d5c00c4d32e8",
+    "studentType": "PART",
+    "firstName": "Samuel",
+    "lastName": "Kim",
+    "moodleUserId": 25
+  },
+  {
+    "email": "zach.scheck@gmail.com",
+    "apiKey": "f1e90de4-de42-4140-a500-931da9a719d2",
+    "studentType": "FULL",
+    "firstName": "Zach",
+    "lastName": "Scheck",
+    "moodleUserId": 98
+  },
+  {
+    "email": "baustin27@gmail.com",
+    "apiKey": "917639b9-c9c8-42b2-90fa-ce7ad2da641a",
+    "studentType": "FULL",
+    "firstName": "Brian",
+    "lastName": "Austin",
+    "moodleUserId": null
+  },
+  {
+    "email": "cscrutchfield@gmail.com",
+    "apiKey": "37262d8b-4374-4604-a985-9fee5ad409b1",
+    "studentType": "FULL",
+    "firstName": "Chandler",
+    "lastName": "Crutchfield",
+    "moodleUserId": 138
+  },
+  {
+    "email": "ilirberisha25@gmail.com",
+    "apiKey": "7fddf05c-fb6e-4066-8be4-4755e5b015a8",
+    "studentType": "PART",
+    "firstName": "Ilir",
+    "lastName": "Berisha",
+    "moodleUserId": 136
+  },
+  {
+    "email": "jpmedallon@gmail.com",
+    "apiKey": "f0c80c9f-b6b5-4a29-9198-de6cf96ada08",
+    "studentType": "PART",
+    "firstName": "JP",
+    "lastName": "Medallon",
+    "moodleUserId": null
+  },
+  {
+    "email": "renzopozo@yahoo.com",
+    "apiKey": "84716377-db72-4d45-b77b-8b369e976522",
+    "studentType": "FULL",
+    "firstName": "Renzo",
+    "lastName": "Aspillaga",
+    "moodleUserId": 139
+  },
+  {
+    "email": "romer.alfonso03@gmail.com",
+    "apiKey": "dbdfc652-t473-4008-a337-b878f88f63e8",
+    "studentType": "FULL",
+    "firstName": "Romer",
+    "lastName": "Alfonso"
+}]

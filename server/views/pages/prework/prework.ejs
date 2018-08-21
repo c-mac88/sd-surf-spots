@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../partials/head.ejs'); %>
+  <body style="padding-top: 70px;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57GFP4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <%- include('../../partials/preworkNavigation.ejs'); %>
+  <%- include('../../partials/banner.ejs'); %>
+  <main class="login">
+      <h2>Login to your account below</h2>
+      <div class="content container">
+        <div class="row">
+          <div class="col-md-6 video">
+            <video poster="" playsinline autoplay muted loop>
+              <source src="https://www.origincodeacademy.com/wp-content/uploads/2017/09/typing-of-codes-2833-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <% if ( !!locals.messages.error ) { %>
+            <h4>Message: <%= locals.messages.error[0] %> </h4>
+          <% } %>
+          <div class="col-md-6 actions">
+            <div class="flex-center column">
+              <form role="form" action="/auth/local/callback" method="post">
+                <div class="form-group">
+                  <label for="username">Email address</label>
+                  <input id="username" type="text" name="username" placeholder="Enter email address" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" name="password" placeholder="Password" class="form-control"/>
+                </div>
+                <div class="flex-between">
+                  <button type="submit" class="btn">Login</button>
+                  <div class="sub">
+                    <p>Don’t have an account? <a href="/preworkSignup">Sign Up</a></p>
+                    <p>Forgot password? <a href="/forgotPassword">Reset</a></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <%- include('../../partials/footer.ejs'); %>
+</body>
+</html>
